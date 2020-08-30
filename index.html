@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Store</title>
+</head>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        position: absolute;
+        font-family: 'Krona One', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: url('bg4.jpg') no-repeat center ;
+
+    }
+
+    .left {
+        /* border: 2px solid black; */
+        position: absolute;
+        left: 15px;
+        top: 20;
+        padding: 10px;
+    }
+
+    .left img {
+        width: 170px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+
+        text-align: center;
+
+    }
+
+    .mid {
+        display: block;
+        width: 65%;
+        margin: 12px auto;
+        /* border: 2px solid rgb(5, 241, 131); */
+        /* padding: 20px; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 7px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid rgb(241, 6, 37); */
+        padding: 7px;
+        /* overflow:initial */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 30px;
+        font-size: 26px;
+    }
+
+    .navbar a {
+        margin: 2px 12px;
+        color: rgb(0, 3, 3);
+        text-decoration: none;
+        padding: 2px 23px;
+
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: red;
+
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Krona One', sans-serif;
+        margin: 2px 34px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+        background-color: grey;
+        border: 2px solid green;
+        margin: 219px 44px;
+        padding: 35px 37px;
+        width: 30%;
+
+    }
+
+    .formgroup input {
+        display: block;
+        width: 321px;
+        padding: 6px;
+        /* border: 2px solid black; */
+        margin: 11px auto;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        font-family: 'Krona One', sans-serif;
+
+
+
+
+    }
+
+    .formgroup button {
+        margin: 29px 171px;
+    }
+
+    /* header::before{
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    } */
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo1.jpg" alt="">
+            <div>Electronic Store</div>
+
+            <!-- left box for logo -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- mid box for navbar -->
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <br>
+            <button class="btn">Email Us</button>
+        </div>
+        <!-- right box for buttons -->
+        </div>
+        <div class="container">
+            <h1>JOIN THE STORE NOW</h1>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    <input type="text" name="" placeholder="Enter your name" </div>
+                    <div class="formgroup">
+                        <input type="text" name="" placeholder="Enter your Gender" </div>
+                        <div class="formgroup">
+                            <input type="text" name="" placeholder="Enter your Mobile no." </div>
+                            <div class="formgroup">
+                                <input type="text" name="" placeholder="Enter your Address" <br>
+                                <button class="btn">Submit</button>
+                            </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>
