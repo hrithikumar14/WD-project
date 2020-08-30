@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow an text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            padding: 9px 48px;
+            margin: 4px 13px;
+            background-color: rgb(181, 181, 181);
+            box-shadow: 6px 5px 15px 5px rgb(0, 128, 0, 0.5);
+            /* box-shadow: -6px -5px green; */
+            /* box-shadow: inset 2px 2px gray ; */
+            box-shadow: 5px 6px 5px green, 10px 11px 8px 0px red;
+        }
+        .card h2{
+            text-shadow:-2px -2px white;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> This was amazing tutorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis? Fugiat dolor dolore aperiam
+                facilis porro, est saepe doloribus laudantium dolorum possimus qui at temporibus. Fuga recusandae
+                doloremque ut placeat.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This tutorial helped me a lot</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus nemo voluptate eligendi sit
+                officiis sapiente hic similique, fugiat repellendus? Deleniti dignissimos quam officiis, a sint
+                voluptate officia quia provident.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at facere recusandae veniam quasi
+                possimus nobis est optio cumque quo fugit voluptates illo ipsum beatae, sunt repellat illum deleniti
+                harum!</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>card4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus veritatis suscipit nostrum
+                in excepturi tempore dolorum quia sapiente a atque quas explicabo officiis iusto, ipsam ipsa qui tenetur
+                magnam!</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: black;
+            color: whitesmoke;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+        .navigation{
+            display: flex;
+        }
+        li{
+            /* display: block; */
+            width: 100px;
+            font-weight: bold;
+            justify-content: center;
+            margin: 2px 2px;
+            list-style: none;
+            /* border: 2px solid black; */
+            /* padding: 2px 3px; */
+        }
+        section{
+            /* background-color: blanchedalmond; */
+            /* border: 2px solid r gb(63, 81, 181); */
+            text-align: center;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center; */
+            /* align */
+            margin: 49px 130px;
+            }
+            h3{
+                font-size: 4rem ;
+            }
+            header::before{
+            background: url(https://source.unsplash.com/WLUHO9A_xik/1600x900) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+                
+            }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1">Home</li>
+                <li class="item2">About</li>
+                <li class="item3">Services</li>
+                <li class="item4">Contact</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>Welcome To HTML</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dignissimos unde, optio sed qui sapiente esse laudantium illum ea amet eos eum cupiditate dolorem quidem voluptate sunt eligendi odio itaque.</p>
+        </section>
+        <hr>
+</body>
+</html>
