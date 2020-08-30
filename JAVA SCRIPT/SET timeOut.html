@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET timeout and clearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is SET time out and clear timeout video")
+        // SET Timeout-->Allows us to run  the function onceafter the intervalof time
+        function greet(name,byeText){
+            // var name = 'hrithik';
+            console.log("Hello good Morning"+ name+byeText);
+            
+        }
+        setTimeout(greet,5000," hrithik"," bye-text");
+        setInterval(greet,1000,"Good night");
+    </script>
+    
+</body>
+</html>
