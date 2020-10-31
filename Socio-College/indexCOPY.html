@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #navbar{
+        display: flex;
+        /* /* align-items: center; */
+        /* justify-content:  center; */ 
+        position: relative;;
+        top: 0px;
+        
+        position: sticky;
+    }
+  
+ #navbar ul{
+     padding: 25px 28px;
+     display: flex;
+     font-family: 'Baloo Bhaina 2', cursive;
+ }
+ #navbar ul li{
+     list-style: none;
+     font-size: 1.5rem;
+
+ }
+ #navbar ul li a{
+     display: block;
+     padding: 22px 13px;
+     color: black;
+     border-radius: 20px;
+     text-decoration: none;
+ }
+ #navbar ul li a:hover{
+     
+     color: black;
+     background: whitesmoke;
+     
+
+ }
+ #navbar::before{
+    content:"";
+    background-color:blueviolet;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+ }
+ /* .fa-caret-down:before {
+            content: "\f0d7"
+        }
+        */
+ 
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+
+        <!-- <div id="logo">
+            <img src="logo.jpg" alt="Electricalwork.com">
+        </div> -->
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            
+            <li class="item"><a href="#">
+            Updates</a></li>
+            <!-- <i class="fa-caret-down" aria-hidden="true"></i></a>
+        <ul>
+            <li>
+                <a href="#">
+                    "time-table"
+                </a>
+            </li>
+            <li>
+                <a href="#">Syllabus</a>
+            </li>
+        </ul>
+    </li> -->
+
+        
+            <li class="item"><a href="#">Contact</a></li>
+            <li class="item"><a href="#">Founders</a></li>
+        </ul>
+
+
+    </nav>
+</body>
+</html>

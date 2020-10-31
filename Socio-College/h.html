@@ -1,0 +1,307 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  .dropbtn {
+    background-color:black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: none;}
+
+  /* Socio college */
+  .navbar-brand a{
+    color:red;
+  }
+
+
+
+  /* SIGN UP PAGE */
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+  </style>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Socio-College</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+<!-- Hover Dropdown -->
+<li>
+      <div class="dropdown">
+        <button class="dropbtn">Updates</button>
+        <div class="dropdown-content">
+          <a href="#">Holiday !</a>
+          <a href="#">Time table</a>
+          <a href="#">Sessional Exams</a>
+          <a href="#">Scholarship</a>
+          <!-- <a href="#"></a> -->
+        </div>
+      </div>
+    </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Notes<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"> SEMESTER-1</a></li>
+          <li><a href="#"> SEMESTER-2</a></li>
+          <li><a href="#"> SEMESTER-3</a></li>
+          <li><a href="#"> SEMESTER-4</a></li>
+          <li><a href="#"> SEMESTER-5</a></li>
+          <li><a href="#"> SEMESTER-6</a></li>
+          <li><a href="#"> SEMESTER-7</a></li>
+          <li><a href="#"> SEMESTER-8</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+    </ul>
+    
+  </div>
+</nav>
+  
+<!-- <div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div> -->
+
+
+
+<div class="container">
+    <h2>Carousel Example</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="bg1.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="bg2.0.jpg" alt="Chicago" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="bg3.jpg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+
+ 
+
+
+  <script>
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iusto id possimus ex, officiis nam ab quasi pariatur dolorum iure. Vel minus voluptatem dolore labore corrupti quos numquam cupiditate fugiat eligendi, voluptate omnis itaque nulla maxime nisi iste praesentium! Maiores distinctio voluptate est qui odio minus earum. Fugiat suscipit ea id, facere ipsa, quibusdam dignissimos blanditiis animi enim rerum reiciendis temporibus. Eius fugiat, nemo assumenda quos esse accusamus incidunt blanditiis et soluta laudantium deserunt, delectus porro. Amet at tempore quod accusantium, porro ipsam consequuntur, ab blanditiis, asperiores facere a. Obcaecati eius corrupti aut nam, nostrum id voluptates distinctio illum adipisci placeat fugiat mollitia, accusamus, voluptatum repellendus beatae ab repellat eum! Ad quidem, excepturi, amet expedita officia laboriosam maxime inventore quo ipsa maiores sed. Voluptates explicabo placeat enim laborum officia quod doloribus possimus, fugit eligendi tenetur dolorum necessitatibus. Nihil enim architecto eos accusamus dolorem, labore neque magni dolores quos molestias dolor id eum quibusdam repellat aut fugiat. Beatae excepturi magnam, accusantium error ab incidunt amet labore, eaque, rem laboriosam dolore. Numquam illo commodi ipsum unde libero iusto consectetur provident cum totam placeat, reprehenderit quos quam harum autem eaque ut nemo dolores repellendus. Omnis eveniet laboriosam odit! Autem eius nostrum non dicta accusamus, eligendi totam nesciunt! Perferendis ea odio quas vitae accusantium possimus, totam debitis dignissimos optio? Culpa illum voluptatem exercitationem adipisci distinctio explicabo odio ipsa necessitatibus molestiae accusantium, dolorum hic vero quo voluptas iure. Rerum praesentium enim magni magnam architecto facere eum, nostrum nihil libero ut commodi, quaerat cum omnis ipsum laborum quis repellat, et voluptas. Iusto temporibus neque dolorem assumenda! Nesciunt corporis ipsa officiis doloremque numquam voluptates dolorem quo a error. Voluptatibus eius quam saepe eligendi suscipit aspernatur dignissimos, distinctio, quo qui veniam aperiam inventore aut perspiciatis veritatis ratione. Possimus dolorum cum aspernatur aperiam ad minima repellat quasi sit quia? Ullam hic ex modi laborum mollitia! Laborum cupiditate repellat incidunt ducimus deserunt culpa molestiae accusamus voluptatum illo, recusandae necessitatibus, sed, adipisci amet doloribus a velit expedita voluptas ratione earum perspiciatis beatae perferendis laboriosam dolores accusantium! Explicabo magnam repellendus dolorum. Dolore, animi. Distinctio molestiae dolores, ex aliquam suscipit ducimus eaque fuga doloribus aut, commodi odio id veniam sequi ipsum alias. Beatae ab accusamus, voluptates iure ex ipsum illum quos sed! Expedita obcaecati mollitia maiores in beatae, ipsa iste aut, repellat laudantium placeat ratione debitis odit? Quasi ipsam repellat cupiditate recusandae temporibus ratione. Dignissimos cum mollitia velit iure earum similique asperiores, cupiditate sed aliquid nesciunt atque quos, quibusdam perferendis libero omnis quas. Quo ipsam recusandae necessitatibus quam eaque ratione cumque iure laboriosam asperiores ea repellat repellendus debitis maxime eos sed sunt consectetur voluptatum, aut, exercitationem assumenda tenetur! Consectetur repellat adipisci iusto, placeat modi necessitatibus voluptatem perferendis quidem maiores aut vitae doloribus reprehenderit. Fuga accusantium debitis officiis, fugit placeat excepturi odio illum sed illo magni dolore, quos quo cum inventore. Magni provident perspiciatis fuga natus ea animi rerum blanditiis accusamus veniam doloribus sapiente eaque quod, error nesciunt aut ad tenetur tempore amet minus beatae eos eveniet? Consectetur consequatur aliquam, corrupti fugit sapiente debitis cumque explicabo enim ut accusantium cum provident ex. Ducimus eaque sint, dolorum magni amet, quae sit dolore voluptates dolores, ullam atque dignissimos quod enim ea ex praesentium deleniti error optio! Quidem eius et voluptates ipsum neque veritatis sint error ab veniam eveniet velit, enim rerum eum adipisci nemo esse facilis totam nam corporis ipsa incidunt sunt illo! Ad, corporis temporibus magnam nesciunt porro harum, esse quia mollitia inventore quaerat assumenda. Eos corrupti quidem impedit dolores ipsam sunt deserunt dicta! Delectus iusto quam suscipit nulla odio rerum tempora iure, eos aspernatur facilis adipisci cum quos iste voluptatem. Autem ipsam voluptas minima eaque alias voluptatibus iure rem error dolore tempore exercitationem possimus, odit placeat labore impedit rerum harum, quam fugit sequi saepe nulla quaerat dignissimos et libero. Dolor commodi aperiam labore sint consequatur velit vel! Dolorem reiciendis quasi libero delectus quidem dolores! Obcaecati maxime sunt recusandae modi rerum eum eligendi quam architecto voluptatum repellat soluta, quos laborum necessitatibus deleniti fuga iusto odit repellendus esse excepturi accusantium vero officia. Praesentium, minus? Dolore asperiores sed dolor aut sunt error ratione natus ea est odio tenetur, perspiciatis libero ut itaque sit recusandae saepe ab. Aperiam officia voluptas debitis modi velit, at assumenda sint. Doloremque error voluptatum veritatis dicta reiciendis iste quam commodi fuga facere pariatur natus temporibus non, sed minus ratione inventore aliquam iusto voluptate ad fugit molestias. Deleniti ex voluptas voluptatibus ut id velit fuga distinctio amet praesentium recusandae fugit neque quis nesciunt repudiandae ipsum quibusdam quo error numquam necessitatibus non dolor voluptatum, tenetur accusamus rem? Sint doloribus, fugit quasi amet odit quidem molestiae corporis non vitae rerum? Quos omnis perspiciatis impedit libero vitae sunt eligendi ipsum? Corporis ea, ut laborum quod dolorem veniam hic mollitia perferendis quae, nemo consectetur corrupti provident ipsum quam odio obcaecati iste necessitatibus similique! Sunt numquam laborum tempore totam et. Praesentium ducimus obcaecati, atque eligendi inventore maxime voluptates earum reiciendis nostrum, necessitatibus velit asperiores perspiciatis dignissimos dolorum, sed maiores pariatur dolores. Odit, rem dolores expedita, atque veritatis numquam facilis porro sed neque earum amet, quibusdam perferendis impedit placeat magni nihil! Repellendus ullam provident ut labore aliquid voluptate porro dignissimos obcaecati error perspiciatis delectus dolore, illum voluptates est dicta voluptatum possimus vero, minus esse ipsum sint accusantium illo quo quasi! Similique, dolore. Quia repellendus architecto vero aliquam voluptas veritatis quos doloribus, nisi nemo nobis? Eveniet tenetur sapiente error natus vitae doloribus, consequatur corrupti qui at quam nemo ab omnis perferendis neque velit autem rem, ratione repudiandae cupiditate? Omnis maiores, ratione, accusantium rem eaque temporibus eveniet esse quos iste consectetur ea ab pariatur quod earum tenetur deserunt expedita quo iusto unde alias a voluptatum! Quaerat eum sequi odit quia laudantium nam animi accusamus quisquam natus illum hic sed distinctio architecto, asperiores sapiente assumenda voluptatum aut ut fugiat aliquam expedita error soluta reiciendis? Debitis nulla, adipisci, aut et quas iure eveniet optio temporibus nesciunt voluptatum ipsum ipsa velit! Corporis cumque vel cum quaerat eaque, non porro obcaecati voluptatum sunt aliquid numquam, animi saepe enim optio vitae amet maxime officia. Officiis, in at?</p>
+</body>
+</html>

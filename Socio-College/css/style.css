@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* #navbar{
+    display: flex;
+    position:relative;
+    top:0;
+    /* float:right; */
+/* } */
+/* #navbar ul{
+    display:flex;
+   
+    /* padding: 25px 28px; */
+
+/* } */
+/* #navbar ul li{
+   display:flex;
+    list-style: none;
+    padding:20px 25px;
+     */
+/* }
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+} */
+/* 
+#navbar::before{
+    background-color:grey;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    width: 100%;
+    height:100%;
+    top: 0px;
+    left:0px;
+}
+ ul li a{
+     float: right; */
+ /* }   */
+/* #navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+ } */
+
+ .mySlides {
+     display:block;
+     height: 500px;
+     width:100vw;
+
+}
+
+#navbar{
+    display: flex;
+    /* /* align-items: center; */
+    /* justify-content:  center; */ 
+    position: relative;;
+    top: 0px;
+    
+    position: sticky;
+}
+
+#navbar ul{
+ padding: 25px 28px;
+ display: flex;
+ font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar ul li{
+    float: right;
+    /* padding: 2px 2px; */
+    /* align-items: inherit; */
+ list-style: none;
+ font-size: 1.5rem;
+
+}
+#navbar ul li a{
+ display: block;
+ padding: 22px 13px;
+ color: black;
+ border-radius: 20px;
+ text-decoration: none;
+}
+/* #navbar ul li a:hover{
+ 
+ color: black;
+ background: whitesmoke;
+ 
+
+} */
+#navbar::before{
+content:"";
+background-color: whitesmoke;
+position: absolute;
+top: 0px;
+left: 0px;
+height:60%;
+width: 100%;
+z-index: -1;
+opacity: 0.6;
+}
+/* #navbar ul li{
+    display: inline-block;
+    float: right;
+    align-items: flex-end;
+} */
